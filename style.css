@@ -108,7 +108,34 @@
         .footer a { color: var(--color-text-secondary); text-decoration: underline; text-decoration-color: var(--color-border); }
         .footer a:hover { text-decoration-color: var(--color-accent); }
 
-        /* Mobile: collapse sidebar */
+        /* ── About page ──────────────────────────────────────────── */
+        .about-content h1 { font-size: 2.4rem; font-weight: 600; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+        .about-subtitle { font-family: var(--font-mono); font-size: 0.9rem; color: var(--color-accent); margin-bottom: 2.5rem; }
+        .about-bio { font-size: 1.02rem; line-height: 1.75; margin-bottom: 1.5rem; }
+        .about-focus { font-size: 0.95rem; line-height: 1.7; color: var(--color-text-secondary); padding: 1.5rem; background: var(--color-surface); border-radius: 6px; margin-bottom: 2.5rem; border-left: 3px solid var(--color-accent); }
+        .about-links { border-top: 1px solid var(--color-border); padding-top: 1.5rem; }
+        .about-links h2 { font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; }
+        .about-link-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+        .about-link-list li a { font-size: 0.93rem; text-decoration: none; color: var(--color-text); }
+        .about-link-list li a:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+        .about-link-list li a::after { content: ' \2197'; font-size: 0.8rem; color: var(--color-text-secondary); }
+
+        /* ── Writing page ────────────────────────────────────────── */
+        .writing-content h1 { font-size: 2.4rem; font-weight: 600; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 2.5rem; }
+        .featured-section { margin-bottom: 2.5rem; }
+        .featured-section h2 { font-family: var(--font-mono); font-size: 0.82rem; font-weight: 500; color: var(--color-text-secondary); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1.5rem; }
+        .featured-article { padding: 1.5rem 0; border-bottom: 1px solid var(--color-border); }
+        .featured-article:first-of-type { border-top: 1px solid var(--color-border); }
+        .featured-article-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.4rem; font-size: 0.78rem; color: var(--color-text-secondary); }
+        .featured-article-meta .tag { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; color: var(--color-accent); background: rgba(255,111,92,0.1); padding: 0.15rem 0.55rem; border-radius: 3px; }
+        .featured-article h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.3rem; line-height: 1.35; }
+        .featured-article h3 a { text-decoration: none; color: var(--color-text); }
+        .featured-article h3 a:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+        .featured-article-desc { font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; }
+        .linkedin-section { padding-top: 1.5rem; }
+        .linkedin-section h2 { font-family: var(--font-mono); font-size: 0.82rem; font-weight: 500; color: var(--color-text-secondary); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1.5rem; }
+
+        /* ── Responsive ──────────────────────────────────────────── */
         @media (max-width: 768px) {
             .layout { grid-template-columns: 1fr; }
             .sidebar {
@@ -126,4 +153,6 @@
             .main { padding: 2rem 1.5rem 1.5rem; }
             .hero h1 { font-size: 1.7rem; }
             .cards-grid { grid-template-columns: 1fr; }
+            .about-content h1 { font-size: 1.7rem; }
+            .writing-content h1 { font-size: 1.7rem; }
         }
