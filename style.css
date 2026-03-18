@@ -1,0 +1,129 @@
+:root {
+            --color-bg: #171717; --color-surface: #212121; --color-surface-hover: #2B2B2B;
+            --color-text: #F5F5F5; --color-text-secondary: #72767B; --color-accent: #FF6F5C;
+            --color-border: #3D3D3D;
+            --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
+            --font-mono: 'IBM Plex Mono', 'Menlo', monospace;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-body); color: var(--color-text); background: var(--color-bg); line-height: 1.65; min-height: 100vh; }
+        a { color: var(--color-text); text-decoration: none; transition: color 0.2s; }
+
+        /* Sidebar nav */
+        .layout { display: grid; grid-template-columns: 200px 1fr; min-height: 100vh; }
+        .sidebar {
+            position: sticky; top: 0; height: 100vh;
+            padding: 2.5rem 1.5rem;
+            border-right: 1px solid var(--color-border);
+            display: flex; flex-direction: column; justify-content: space-between;
+        }
+        .sidebar-top { display: flex; flex-direction: column; gap: 2.5rem; }
+        .sidebar-identity { display: flex; flex-direction: column; gap: 0.75rem; }
+        .sidebar-photo { width: 150px; height: 150px; border-radius: 10px; object-fit: cover; object-position: center top; margin-bottom: 0.5rem; }
+        .sidebar-name {
+            font-family: var(--font-mono); font-size: 0.82rem; font-weight: 500;
+            color: var(--color-text-secondary); line-height: 1.5;
+        }
+        .sidebar-name strong { color: var(--color-text); display: block; font-size: 0.88rem; }
+        .sidebar-nav { display: flex; flex-direction: column; gap: 0.6rem; }
+        .sidebar-nav a {
+            font-size: 0.88rem; color: var(--color-text-secondary);
+            padding: 0.35rem 0; transition: color 0.2s;
+        }
+        .sidebar-nav a:hover { color: var(--color-text); }
+        .sidebar-nav a.active { color: var(--color-accent); }
+        .sidebar-bottom { display: flex; flex-direction: column; gap: 0.5rem; }
+        .sidebar-social {
+            font-size: 0.82rem; color: var(--color-text-secondary);
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            transition: color 0.2s;
+        }
+        .sidebar-social:hover { color: var(--color-text); }
+        .sidebar-social svg { width: 14px; height: 14px; }
+
+        /* Main content */
+        .main { padding: 2.5rem 3rem 2rem; max-width: 820px; }
+
+        /* Hero — function first */
+        .hero { margin-bottom: 3rem; }
+        .hero-label {
+            font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-accent);
+            letter-spacing: 0.04em; margin-bottom: 0.75rem;
+        }
+        .hero h1 {
+            font-size: 2.6rem; font-weight: 600; line-height: 1.1;
+            letter-spacing: -0.03em; margin-bottom: 1.25rem;
+        }
+        .hero-description {
+            font-size: 1.05rem; line-height: 1.7; color: var(--color-text-secondary);
+            max-width: 540px; margin-bottom: 1.25rem;
+        }
+        .hero-meta {
+            font-size: 0.88rem; color: var(--color-text-secondary);
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .hero-meta a { color: var(--color-text); font-weight: 500; }
+        .hero-meta a:hover { color: var(--color-accent); }
+
+        /* Section labels */
+        .section-label {
+            font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500;
+            color: var(--color-text-secondary); letter-spacing: 0.08em;
+            text-transform: uppercase; margin-bottom: 1.25rem;
+        }
+
+        /* Article cards — grid */
+        .cards-section { margin-bottom: 3rem; }
+        .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+        .card {
+            background: var(--color-surface); border: 1px solid var(--color-border);
+            border-radius: 6px; padding: 1.25rem; display: flex; flex-direction: column;
+            gap: 0.6rem; transition: border-color 0.2s, background 0.2s;
+            text-decoration: none; color: var(--color-text);
+        }
+        .card:hover { border-color: var(--color-text-secondary); background: var(--color-surface-hover); }
+        .card-top { display: flex; align-items: center; justify-content: space-between; }
+        .card-tag {
+            font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500;
+            color: var(--color-accent); background: rgba(255,111,92,0.1);
+            padding: 0.15rem 0.5rem; border-radius: 3px;
+        }
+        .card-arrow { color: var(--color-text-secondary); font-size: 0.85rem; opacity: 0; transition: opacity 0.15s; }
+        .card:hover .card-arrow { opacity: 1; }
+        .card-title { font-size: 0.93rem; font-weight: 500; line-height: 1.4; }
+        .card-desc { font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.55; }
+
+        .section-link {
+            display: inline-block; margin-top: 1rem; font-size: 0.82rem;
+            color: var(--color-accent); font-weight: 500;
+        }
+        .section-link:hover { text-decoration: underline; }
+
+        /* Footer inline */
+        .footer {
+            margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border);
+            font-size: 0.78rem; color: var(--color-text-secondary);
+        }
+        .footer a { color: var(--color-text-secondary); text-decoration: underline; text-decoration-color: var(--color-border); }
+        .footer a:hover { text-decoration-color: var(--color-accent); }
+
+        /* Mobile: collapse sidebar */
+        @media (max-width: 768px) {
+            .layout { grid-template-columns: 1fr; }
+            .sidebar {
+                position: static; height: auto; border-right: none;
+                border-bottom: 1px solid var(--color-border);
+                padding: 1.5rem; text-align: center;
+                flex-direction: column; align-items: center; gap: 1.25rem;
+            }
+            .sidebar-top { flex-direction: column; align-items: center; gap: 1.25rem; }
+            .sidebar-identity { align-items: center; }
+            .sidebar-photo { width: 150px; height: 150px; border-radius: 10px; margin-bottom: 0; }
+            .sidebar-name { text-align: center; }
+            .sidebar-nav { flex-direction: row; gap: 1.5rem; justify-content: center; }
+            .sidebar-bottom { flex-direction: row; gap: 1.5rem; justify-content: center; }
+            .main { padding: 2rem 1.5rem 1.5rem; }
+            .hero h1 { font-size: 1.7rem; }
+            .cards-grid { grid-template-columns: 1fr; }
+        }
