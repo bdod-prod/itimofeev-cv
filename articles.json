@@ -1,3 +1,52 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "url": "https://elfsight.com/blog/amazon-apis-explained-which-one-do-you-need/",
+      "title": "Amazon APIs Explained: Which One Do You Need? [2025]",
+      "description": "Compare SP-API, Product Advertising, and Amazon Advertising APIs pricing, rate limits, code examples, and best practices for scalable integrations.",
+      "date": "2025-12-04",
+      "publisher": "Elfsight",
+      "tag": "API"
+    },
+    {
+      "url": "https://elfsight.com/blog/how-to-get-x-twitter-api-key-in-2026/",
+      "title": "How to Get X API Key: Complete 2026 Guide to Pricing, Setup & Optimization",
+      "description": "Get your X API key. Understand current pricing tiers, implement OAuth 2.0 authentication, and maximize your API quota.",
+      "date": "2025-12-02",
+      "publisher": "Elfsight",
+      "tag": "API"
+    },
+    {
+      "url": "https://elfsight.com/blog/instagram-graph-api-complete-developer-guide-for-2026/",
+      "title": "Instagram Graph API: Complete Developer Guide for 2026",
+      "description": "Let's uncover authentication, rate limits, endpoints, optimization strategies, and migration from Basic Display API. 2026 developer reference.",
+      "date": "2025-11-28",
+      "publisher": "Elfsight",
+      "tag": "API"
+    },
+    {
+      "url": "https://elfsight.com/blog/youtube-data-api-v3-limits-operations-resources-methods-etc/",
+      "title": "Your Complete Guide to YouTube Data API v3 – Quotas, Methods, and More",
+      "description": "Learn YouTube Data API v3 quota limits, cost structure, HTTP methods, authentication, and optimization techniques. Includes real scenarios and quota increase strategies.",
+      "date": "2025-11-28",
+      "publisher": "Elfsight",
+      "tag": "API"
+    },
+    {
+      "url": "https://elfsight.com/blog/best-website-calendar-api/",
+      "title": "Add a Powerful Calendar to Your Website — for Free!",
+      "description": "See which free calendar API fits your website — fast, easy, no cost.",
+      "date": "2025-06-02",
+      "publisher": "Elfsight",
+      "tag": "API"
+    },
+    {
+      "url": "https://elfsight.com/blog/how-to-use-calculator-api/",
+      "title": "Create a Website Calculator in Minutes — With an API or Without It!",
+      "description": "Add interactivity to your website - add a smart calculator with an API solution or a no-code widget!",
+      "date": "2025-05-06",
+      "publisher": "Elfsight",
+      "tag": "API"
+    }
+  ]
 }
